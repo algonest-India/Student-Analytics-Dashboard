@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - Capstone Project</title>
+    <link rel="stylesheet" href="./css/dashboard.css">
+</head>
+<body>
+    <div class="grid-container">
+        <!-- Header with Navigation -->
+        <header class="grid-header" role="banner">
+            <h1>Student Analytics Dashboard</h1>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#grades">Grades</a></li>
+                    <li><a href="#attendance">Attendance</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Sidebar with Quick Links -->
+        <aside class="grid-sidebar" role="complementary">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#assignments">Assignments</a></li>
+                <li><a href="#calendar">Calendar</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#support">Support</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content: Stats and Chart -->
+        <main class="grid-main" role="main">
+            <section id="overview" class="stats-section">
+                <h2>Overview</h2>
+                <div class="stats-grid">
+                    <div class="stat-card" aria-label="GPA: 3.8">
+                        <h3>GPA</h3>
+                        <p class="stat-value">3.8</p>
+                        <p class="stat-change positive">+0.2</p>
+                    </div>
+                    <div class="stat-card" aria-label="Completed Courses: 5">
+                        <h3>Courses Completed</h3>
+                        <p class="stat-value">5</p>
+                        <p class="stat-change neutral">0</p>
+                    </div>
+                    <div class="stat-card" aria-label="Attendance: 95%">
+                        <h3>Attendance</h3>
+                        <p class="stat-value">95%</p>
+                        <p class="stat-change positive">+5%</p>
+                    </div>
+                    <div class="stat-card" aria-label="Assignments Due: 3">
+                        <h3>Assignments Due</h3>
+                        <p class="stat-value">3</p>
+                        <p class="stat-change negative">-1</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="grades" class="chart-section">
+                <h2>Grade Progress</h2>
+                <div class="chart-placeholder" aria-label="Placeholder for grade chart">
+                    <p>Chart Placeholder: Visualize grades here (e.g., using Chart.js)</p>
+                    <canvas width="400" height="200" aria-hidden="true"></canvas>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="grid-footer" role="contentinfo">
+            <p>&copy; 2025 Student Dashboard. Capstone Project Demo.</p>
+        </footer>
+    </div>
+</body>
+</html>
